@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url 'http://repo.spring.io/libs-release' }
+    }
+    dependencies {
+        classpath 'org.springframework.boot:spring-boot-gradle-plugin:2.2.4.RELEASE'
+    }
+}
+
+plugins {
+    id 'java'
+    id "org.springframework.boot" version "2.2.4.RELEASE"
+}
+
+group 'com.royhq'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+   compile("org.springframework.boot:spring-boot-starter-web:2.2.4.RELEASE")
+}
